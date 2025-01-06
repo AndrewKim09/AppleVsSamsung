@@ -1,0 +1,1042 @@
+{
+  "2024": {
+    "battery":
+      { 
+        "details":
+          [
+            {
+              "title": "Battery Capacity",
+              "apple": "4441 mAh",
+              "samsung": "5000 mAh",
+              "winner": "samsung",
+              "highlight": {"none": true}
+            },
+            {
+              "title": "Charging Time",
+              "apple": "2 hrs 1 mins",
+              "samsung": "1 hrs 27 mins",
+              "winner": "samsung",
+              "highlight": {"none": true}
+            },
+            {
+              "title": "Battery Life (Watching Videos)",
+              "apple": "9 hrs 35 mins",
+              "samsung": "12 hrs 31 mins",
+              "winner": "samsung",
+              "highlight": {"none": true}
+            }
+          ],
+
+        "conclusion": "Samsung has a better battery life and charging time compared to Apple",
+        "depth": {"near": 100, "far": 180}
+
+      },
+    "chip":{
+      "details":
+        [
+          {
+            "title": "Chipset",
+            "apple": "A15 Bionic",
+            "samsung": "Exynos 2200",
+            "winner": "samsung",
+            "highlight": {"processor": true}
+          },
+          {
+            "title": "CPU",
+            "apple": "Hexa-core",
+            "samsung": "Octa-core",
+            "winner": "samsung",
+            "highlight": {"processor": true}
+          },
+          {
+            "title": "GPU",
+            "apple": "Apple GPU",
+            "samsung": "Mali-G710",
+            "winner": "samsung",
+            "highlight": {"processor": true}
+          }
+        ],
+      "conclusion": "Samsung has a better chipset and CPU compared to Apple",
+      "depth": {"near": 100, "far": 180}
+    },
+    "fullbody": 
+      {
+        "details":
+          [
+            {
+              "title": "Weight",
+              "apple": "221 g",
+              "samsung": "233 g",
+              "winner": "apple",
+              "highlight": {"none": true}
+            },
+            {
+              "title": "brightness",
+              "apple": "2000 nits",
+              "samsung": "2600 nits",
+              "winner": "samsung",
+              "highlight": {"screen": true}
+            },
+            {
+              "title": "resolution",
+              "apple": "1290x2796 pixels",
+              "samsung": "1440x3120 pixels",
+              "winner": "samsung",
+              "highlight": {"screen": true}
+            },
+            {
+              "title": "display size",
+              "apple": "6.7 inches",
+              "samsung": "6.8 inches",
+              "winner": "samsung",
+              "highlight": {"screen": true}
+            }
+          ],
+        "conclusion": "Samsung has a better display and resolution compared to Apple",
+        "depth": {"near": 100, "far": 180}
+      },
+      "camera":{
+        "details":
+          [
+            {
+              "title": "Main Camera",
+              "apple": "48 MP",
+              "samsung": "108 MP",
+              "winner": "samsung",
+              "highlight": {"main": true}
+            },
+
+            {
+              "title": "Video Recording",
+              "apple": "4K",
+              "samsung": "8K",
+              "winner": "samsung",
+              "highlight": {"main": true}
+            },
+            {
+              "title": "Camera Features",
+              "apple": "Night Mode",
+              "samsung": "Night Mode, Pro Mode",
+              "winner": "samsung",
+              "highlight": {"main": true}
+            },
+            {
+              "title": "0.5-5x Zoom",
+              "apple": "good",
+              "samsung": "great",
+              "winner": "samsung",
+              "highlight": {"main": true, "3xZoom": true}
+            },
+            {
+              "title": "5x+ Zoom",
+              "apple": "great",
+              "samsung": "good",
+              "winner": "apple",
+              "highlight": {"5xZoom": true}
+            },
+            {
+              "title": "photo quality",
+              "apple": "great",
+              "samsung": "good",
+              "winner": "apple",
+              "highlight": {"main": true, "3xZoom": true, "5xZoom": true, "ultraWide": true}
+            },
+            {
+              "title": "video quality",
+              "apple": "great",
+              "samsung": "good",
+              "winner": "apple",
+              "highlight": {"main": true, "ultraWide": true}
+            },
+            {
+              "title": "camera stability",
+              "apple": "excellent",
+              "samsung": "great",
+              "winner": "apple",
+              "highlight": {"main": true}
+            }
+          ],
+        "conclusion": "Despite samsungs boasted higher resolution and zoom, Apple ultimately has the better post proccessing and camera stability that still makes it one step ahead of samsung",
+        "depth": {"near": 150, "far": 270}
+      },
+      "other": {
+        "price": [
+            {
+                "title": "Base Price",
+                "apple": "$1199 usd",
+                "samsung": "1299 usd",
+                "winner": "apple"
+            },
+            {
+                "title": "512GB price",
+                "apple": "$1399 usd",
+                "samsung": "$1419 usd",
+                "winner": "apple"
+            },
+            {
+                "title": "1TB price",
+                "apple": "$1599 usd",
+                "samsung": "$1659 usd",
+                "winner": "apple"
+            },
+            {
+                "title": "trade in offers",
+                "apple": "up to 905",
+                "samsung": "up to 690",
+                "winner": "apple"
+            },
+            {
+                "title": "educational pricing",
+                "apple": "up to 10% off devices + gift cards or earbuds of around $150",
+                "samsung": "up to 10% off all products",
+                "winner": "apple"
+            }
+        ],
+        "device ecosystem": [
+            {
+                "title": "Device integration",
+                "apple": "Tightly integrated with seamless cross-functionality (iPhone, iPad, Mac, Apple Watch, etc.)",
+                "samsung": "Strong integration within Galaxy devices; some compatibility with Windows (via Microsoft partnership)",
+                "winner": "apple"
+            },
+            {
+                "title": "Content and media",
+                "apple": "Apple Music, Apple TV+, Apple Fitness+, iCloud; content easily shared across devices",
+                "samsung": "Samsung TV Plus, Galaxy Store, SmartThings; less seamless media sharing across devices",
+                "winner": "apple"
+            },
+            {
+                "title": "Smart home support",
+                "apple": "HomeKit-enabled devices with a focus on privacy; integrated in the Apple Home app",
+                "samsung": "Extensive SmartThings ecosystem with broad device support; compatible with many smart home platforms",
+                "winner": "samsung"
+            },
+            {
+                "title": "Wearables",
+                "apple": "Apple Watch with high ecosystem integration and exclusive health features",
+                "samsung": "Galaxy Watch with strong Samsung integration and third-party app support",
+                "winner": "apple"
+            },
+            {
+                "title": "Product lifespan and updates",
+                "apple": "Long-term support (up to 6+ years of iOS updates)",
+                "samsung": "Up to 4 years of major Android updates, 5 years of security updates",
+                "winner": "apple"
+            }
+        ],
+        "software": [
+            {
+                "title": "User Interface (UI) Design",
+                "apple": "Simple, intuitive iOS with minimal customization but polished design",
+                "samsung": "Feature-rich One UI with extensive customization options and multitasking capabilities",
+                "winner": "samsung"
+            },
+            {
+                "title": "Pre-installed Apps and Bloatware",
+                "apple": "Minimal pre-installed apps, most can be removed",
+                "samsung": "Includes Samsung apps and partner bloatware; some apps are not removable",
+                "winner": "apple"
+            },
+            {
+                "title": "Voice Assistant Performance",
+                "apple": "Siri is integrated across Apple devices with moderate performance",
+                "samsung": "Bixby is less popular but complemented by Google Assistant",
+                "winner": "neutral"
+            },
+            {
+                "title": "Availability of Apps and Games",
+                "apple": "App Store with a wide selection of high-quality apps and games",
+                "samsung": "Galaxy Store with a good selection, but some apps are optimized for iOS first. However, android allows for more customization and sideloading of apps",
+                "winner": "Samsung"
+            }
+        ],
+        "security": [
+            {
+                "title": "Biometric Security",
+                "apple": "Face ID with advanced TrueDepth camera system; no fingerprint sensor",
+                "samsung": "Ultrasonic fingerprint sensor and facial recognition (less secure than Face ID)",
+                "winner": "apple"
+            },
+            {
+                "title": "Privacy Features",
+                "apple": "App Tracking Transparency, on-device Siri processing, and Mail Privacy Protection",
+                "samsung": "Knox Security and Secure Folder for data isolation",
+                "winner": "tie"
+            },
+            {
+              "title": "vulnerability to malware",
+              "apple": "less vulnerable with the restriction of apps to the app store",
+              "samsung": "more vulnerable with the ability to download apps from the web",
+              "winner": "apple"
+            }
+        ],
+        "popularity": [
+            {
+                "title": "Overall Global Sales",
+                "apple": "iPhone models hold 4 of the top 5 positions in global sales.",
+                "samsung": "Samsung's Galaxy S24 Ultra secures the 5th position, with Galaxy A15 and Galaxy A54 also in the top 10.",
+                "winner": "apple"
+            },
+            {
+                "title": "Market Trends",
+                "apple": "Strong presence in premium markets, with Pro models representing a major share of sales.",
+                "samsung": "Successful with a mix of flagship and budget devices, maintaining strong brand presence in regions like Europe and Asia.",
+                "winner": "tie"
+            },
+            {
+                "title": "US Market",
+                "apple": "Apple dominates with around 50% market share, with iPhone particularly popular among younger demographics.",
+                "samsung": "Significant, but secondary to Apple in the US market.",
+                "winner": "apple"
+            },
+            {
+                "title": "Asia-Pacific Region",
+                "apple": "High popularity in Japan and other premium market segments.",
+                "samsung": "Widely popular in multiple Asia-Pacific countries, holding a strong presence with both premium and budget-friendly models.",
+                "winner": "samsung"
+            },
+            {
+                "title": "European Market",
+                "apple": "High iPhone sales, especially among younger users in Western Europe.",
+                "samsung": "Dominates market share across Europe due to a broad product range.",
+                "winner": "samsung"
+            }
+        ],
+        "conclusion": "Samsung has a better price, RAM, headphone jack, and expandable storage compared to Apple",
+        "depth": {"near": 230, "far": 280}
+    }
+
+  },
+  "2023": {
+    "battery": {
+      "details": [
+        {
+          "title": "Battery Capacity",
+          "apple": "4323 mAh",
+          "samsung": "5000 mAh",
+          "winner": "samsung",
+          "highlight": {"none": true}
+        },
+        {
+          "title": "Charging Time",
+          "apple": "2 hrs 15 mins",
+          "samsung": "1 hr 20 mins",
+          "winner": "samsung",
+          "highlight": {"none": true}
+        },
+        {
+          "title": "Battery Life (Watching Videos)",
+          "apple": "8 hrs 45 mins",
+          "samsung": "12 hrs 10 mins",
+          "winner": "samsung",
+          "highlight": {"none": true}
+        }
+      ],
+      "conclusion": "Samsung offers superior battery performance and faster charging.",
+      "depth": {"near": 90, "far": 170}
+    },
+    "chip": {
+      "details": [
+        {
+          "title": "Chipset",
+          "apple": "A16 Bionic",
+          "samsung": "Exynos 2100",
+          "winner": "apple",
+          "highlight": {"processor": true}
+        },
+        {
+          "title": "CPU",
+          "apple": "Hexa-core",
+          "samsung": "Octa-core",
+          "winner": "samsung",
+          "highlight": {"processor": true}
+        },
+        {
+          "title": "GPU",
+          "apple": "Apple GPU",
+          "samsung": "Mali-G78",
+          "winner": "apple",
+          "highlight": {"processor": true}
+        }
+      ],
+      "conclusion": "Apple excels in chip efficiency and GPU performance.",
+      "depth": {"near": 100, "far": 180}
+    },
+    "fullbody": {
+      "details": [
+        {
+          "title": "Weight",
+          "apple": "206 g",
+          "samsung": "228 g",
+          "winner": "apple",
+          "highlight": {"none": true}
+        },
+        {
+          "title": "Brightness",
+          "apple": "2000 nits",
+          "samsung": "2500 nits",
+          "winner": "samsung",
+          "highlight": {"screen": true}
+        },
+        {
+          "title": "Resolution",
+          "apple": "1290x2796 pixels",
+          "samsung": "1440x3200 pixels",
+          "winner": "samsung",
+          "highlight": {"screen": true}
+        },
+        {
+          "title": "Display Size",
+          "apple": "6.7 inches",
+          "samsung": "6.8 inches",
+          "winner": "samsung",
+          "highlight": {"screen": true}
+        }
+      ],
+      "conclusion": "Samsung's display outshines Apple's in brightness and resolution.",
+      "depth": {"near": 90, "far": 170}
+    },
+    "camera": {
+      "details": [
+        {
+          "title": "Main Camera",
+          "apple": "48 MP",
+          "samsung": "108 MP",
+          "winner": "samsung",
+          "highlight": {"main": true}
+        },
+        {
+          "title": "Video Recording",
+          "apple": "4K",
+          "samsung": "8K",
+          "winner": "samsung",
+          "highlight": {"main": true}
+        },
+        {
+          "title": "Camera Features",
+          "apple": "ProRAW, Night Mode",
+          "samsung": "Night Mode, Pro Mode",
+          "winner": "samsung",
+          "highlight": {"main": true}
+        },
+        {
+          "title": "Zoom Performance",
+          "apple": "5x optical zoom",
+          "samsung": "10x optical zoom",
+          "winner": "samsung",
+          "highlight": {"main": true, "zoom": true}
+        }
+      ],
+      "conclusion": "Samsung's camera leads in zoom and resolution, but Apple's post-processing remains competitive.",
+      "depth": {"near": 150, "far": 270}
+    },
+    "other": {
+      "price": [
+          {
+              "title": "Base Price",
+              "apple": "$1099 usd",
+              "samsung": "$1199 usd",
+              "winner": "apple"
+          },
+          {
+              "title": "512GB price",
+              "apple": "$1299 usd",
+              "samsung": "$1349 usd",
+              "winner": "apple"
+          },
+          {
+              "title": "1TB price",
+              "apple": "$1499 usd",
+              "samsung": "$1559 usd",
+              "winner": "apple"
+          },
+          {
+              "title": "trade in offers",
+              "apple": "up to 800",
+              "samsung": "up to 600",
+              "winner": "apple"
+          },
+          {
+              "title": "educational pricing",
+              "apple": "up to 10% off + gift cards",
+              "samsung": "up to 8% off all products",
+              "winner": "apple"
+          }
+      ],
+      "device ecosystem": [
+          {
+              "title": "Device integration",
+              "apple": "Seamless integration across iPhone, iPad, Mac, and Apple Watch",
+              "samsung": "Good integration among Galaxy devices and Windows PCs",
+              "winner": "apple"
+          },
+          {
+              "title": "Content and media",
+              "apple": "Apple Music, Apple TV+, and iCloud dominate",
+              "samsung": "Samsung TV Plus and SmartThings trail in seamlessness",
+              "winner": "apple"
+          },
+          {
+              "title": "Smart home support",
+              "apple": "HomeKit ecosystem with privacy focus",
+              "samsung": "SmartThings with broader compatibility",
+              "winner": "samsung"
+          },
+          {
+              "title": "Wearables",
+              "apple": "Apple Watch outperforms competitors in health integration",
+              "samsung": "Galaxy Watch offers great customization",
+              "winner": "apple"
+          },
+          {
+              "title": "Product lifespan and updates",
+              "apple": "Up to 5+ years of iOS updates",
+              "samsung": "4 years of Android updates",
+              "winner": "apple"
+          }
+      ],
+      "software": [
+          {
+              "title": "User Interface (UI) Design",
+              "apple": "Refined simplicity in iOS",
+              "samsung": "Feature-rich but more complex",
+              "winner": "samsung"
+          },
+          {
+              "title": "Pre-installed Apps and Bloatware",
+              "apple": "Minimal",
+              "samsung": "Comes with partner apps",
+              "winner": "apple"
+          },
+          {
+              "title": "Voice Assistant Performance",
+              "apple": "Siri improving but not leading",
+              "samsung": "Bixby + Google Assistant",
+              "winner": "samsung"
+          },
+          {
+              "title": "Availability of Apps and Games",
+              "apple": "More curated selection",
+              "samsung": "Better customization options",
+              "winner": "samsung"
+          }
+      ],
+      "security": [
+          {
+              "title": "Biometric Security",
+              "apple": "Face ID dominates",
+              "samsung": "Ultrasonic fingerprint and face unlock",
+              "winner": "apple"
+          },
+          {
+              "title": "Privacy Features",
+              "apple": "Strong privacy measures",
+              "samsung": "Knox Security",
+              "winner": "tie"
+          },
+          {
+              "title": "Vulnerability to malware",
+              "apple": "More secure due to App Store restrictions",
+              "samsung": "Less secure due to APK sideloading",
+              "winner": "apple"
+          }
+      ],
+      "popularity": [
+          {
+              "title": "Overall Global Sales",
+              "apple": "Still dominating premium market",
+              "samsung": "Maintains presence in budget devices",
+              "winner": "apple"
+          },
+          {
+              "title": "Market Trends",
+              "apple": "Growing Pro line share",
+              "samsung": "Affordable models shine",
+              "winner": "tie"
+          },
+          {
+              "title": "US Market",
+              "apple": "Leads with ~48%",
+              "samsung": "Struggles to close gap",
+              "winner": "apple"
+          },
+          {
+              "title": "Asia-Pacific Region",
+              "apple": "Japan & Korea strong",
+              "samsung": "Strong elsewhere",
+              "winner": "samsung"
+          },
+          {
+              "title": "European Market",
+              "apple": "Growing",
+              "samsung": "Market leader",
+              "winner": "samsung"
+          }
+      ],
+      "conclusion": "Samsung offers better value in mid-range, Apple rules high-end.",
+      "depth": {"near": 210, "far": 270}
+  }
+
+  },
+  "2017": {
+    "battery": {
+      "details": [
+        {
+          "title": "Battery Capacity",
+          "apple": "2716 mAh",
+          "samsung": "3000 mAh",
+          "winner": "samsung",
+          "highlight": {"none": true}
+        },
+        {
+          "title": "Charging Time",
+          "apple": "2 hrs 30 mins",
+          "samsung": "1 hr 40 mins",
+          "winner": "samsung",
+          "highlight": {"none": true}
+        },
+        {
+          "title": "Battery Life (Watching Videos)",
+          "apple": "9 hrs",
+          "samsung": "10 hrs",
+          "winner": "samsung",
+          "highlight": {"none": true}
+        }
+      ],
+      "conclusion": "Samsung edges out with slightly larger capacity and faster charging.",
+      "depth": {"near": 80, "far": 150}
+    },
+    "chip": {
+      "details": [
+        {
+          "title": "Chipset",
+          "apple": "A11 Bionic",
+          "samsung": "Exynos 8895",
+          "winner": "apple",
+          "highlight": {"processor": true}
+        },
+        {
+          "title": "CPU",
+          "apple": "Hexa-core",
+          "samsung": "Octa-core",
+          "winner": "samsung",
+          "highlight": {"processor": true}
+        },
+        {
+          "title": "GPU",
+          "apple": "Apple GPU (three-core)",
+          "samsung": "Mali-G71",
+          "winner": "apple",
+          "highlight": {"processor": true}
+        }
+      ],
+      "conclusion": "Apple leads in efficiency and GPU performance despite fewer cores.",
+      "depth": {"near": 90, "far": 160}
+    },
+    "fullbody": {
+      "details": [
+        {
+          "title": "Weight",
+          "apple": "174 g",
+          "samsung": "155 g",
+          "winner": "samsung",
+          "highlight": {"none": true}
+        },
+        {
+          "title": "Brightness",
+          "apple": "625 nits",
+          "samsung": "1000 nits",
+          "winner": "samsung",
+          "highlight": {"screen": true}
+        },
+        {
+          "title": "Resolution",
+          "apple": "1125x2436 pixels",
+          "samsung": "1440x2960 pixels",
+          "winner": "samsung",
+          "highlight": {"screen": true}
+        },
+        {
+          "title": "Display Size",
+          "apple": "5.8 inches",
+          "samsung": "5.8 inches",
+          "winner": "tie",
+          "highlight": {"screen": true}
+        }
+      ],
+      "conclusion": "Samsung's OLED display outshines Apple's Super Retina Display.",
+      "depth": {"near": 80, "far": 140}
+    },
+    "camera": {
+      "details": [
+        {
+          "title": "Main Camera",
+          "apple": "12 MP (dual)",
+          "samsung": "12 MP",
+          "winner": "tie",
+          "highlight": {"main": true}
+        },
+        {
+          "title": "Video Recording",
+          "apple": "4K 60fps",
+          "samsung": "4K 30fps",
+          "winner": "apple",
+          "highlight": {"main": true}
+        },
+        {
+          "title": "Camera Features",
+          "apple": "Portrait Mode",
+          "samsung": "Pro Mode",
+          "winner": "tie",
+          "highlight": {"main": true}
+        }
+      ],
+      "conclusion": "Apple takes the edge in video, but overall photography remains competitive.",
+      "depth": {"near": 120, "far": 200}
+    },
+    "other": {
+      "price": [
+          {
+              "title": "Base Price",
+              "apple": "$999 usd",
+              "samsung": "$929 usd",
+              "winner": "samsung"
+          },
+          {
+              "title": "256GB price",
+              "apple": "$1149 usd",
+              "samsung": "$1049 usd",
+              "winner": "samsung"
+          },
+          {
+              "title": "trade in offers",
+              "apple": "up to 650",
+              "samsung": "up to 450",
+              "winner": "apple"
+          },
+          {
+              "title": "educational pricing",
+              "apple": "Not widely available",
+              "samsung": "Occasional promotions with discounts",
+              "winner": "samsung"
+          }
+      ],
+      "device ecosystem": [
+          {
+              "title": "Device integration",
+              "apple": "Early stages of seamless cross-device functionality (Continuity, AirDrop, Handoff)",
+              "samsung": "Samsung Flow introduced for limited cross-device integration",
+              "winner": "apple"
+          },
+          {
+              "title": "Content and media",
+              "apple": "Apple Music, iTunes Store; ecosystem still growing",
+              "samsung": "Samsung Milk Music discontinued; lacks proprietary media ecosystem",
+              "winner": "apple"
+          },
+          {
+              "title": "Smart home support",
+              "apple": "HomeKit introduced but limited adoption",
+              "samsung": "SmartThings ecosystem growing rapidly",
+              "winner": "samsung"
+          },
+          {
+              "title": "Wearables",
+              "apple": "Apple Watch gains traction with Series 3 (LTE support)",
+              "samsung": "Galaxy Gear offers flexibility and Android integration",
+              "winner": "apple"
+          },
+          {
+              "title": "Product lifespan and updates",
+              "apple": "4-5 years of iOS support",
+              "samsung": "2 years of Android updates",
+              "winner": "apple"
+          }
+      ],
+      "software": [
+          {
+              "title": "User Interface (UI) Design",
+              "apple": "iOS 11 debuts polished features like Files app, ARKit support",
+              "samsung": "Samsung Experience UI introduces improved aesthetics",
+              "winner": "samsung"
+          },
+          {
+              "title": "Pre-installed Apps and Bloatware",
+              "apple": "Minimal pre-installed apps",
+              "samsung": "Includes significant bloatware, some removable",
+              "winner": "apple"
+          },
+          {
+              "title": "Voice Assistant Performance",
+              "apple": "Siri lags behind competitors",
+              "samsung": "Bixby introduced but struggles against Alexa and Google",
+              "winner": "neutral"
+          },
+          {
+              "title": "Availability of Apps and Games",
+              "apple": "App Store retains premium app advantage",
+              "samsung": "Google Play Store matches in quantity but varies in quality",
+              "winner": "tie"
+          }
+      ],
+      "security": [
+          {
+              "title": "Biometric Security",
+              "apple": "Face ID introduced with iPhone X, groundbreaking",
+              "samsung": "Iris scanner, fingerprint sensor available but less reliable",
+              "winner": "apple"
+          },
+          {
+              "title": "Privacy Features",
+              "apple": "Focuses on privacy with Safari tracking prevention",
+              "samsung": "Knox Security leads Android competitors",
+              "winner": "tie"
+          }
+      ],
+      "popularity": [
+          {
+              "title": "Overall Global Sales",
+              "apple": "iPhone X dominates flagship market",
+              "samsung": "Galaxy S8 leads Android segment",
+              "winner": "tie"
+          },
+          {
+              "title": "US Market",
+              "apple": "Leading by a significant margin",
+              "samsung": "Second place with Galaxy S series",
+              "winner": "apple"
+          },
+          {
+              "title": "European Market",
+              "apple": "Growing steadily",
+              "samsung": "Remains dominant",
+              "winner": "samsung"
+          },
+          {
+              "title": "Asian Market",
+              "apple": "Strong in Japan and China",
+              "samsung": "Broad success across all regions",
+              "winner": "samsung"
+          }
+      ],
+      "conclusion": "Samsung offers better price-to-feature ratio, while Apple stands out for its innovation.",
+      "depth": {"near": 190, "far": 250}
+    }
+
+  },
+  "2010": {
+    "battery": {
+      "details": [
+        {
+          "title": "Battery Capacity",
+          "apple": "1420 mAh",
+          "samsung": "1500 mAh",
+          "winner": "samsung",
+          "highlight": {"none": true}
+        },
+        {
+          "title": "Charging Time",
+          "apple": "3 hrs",
+          "samsung": "2 hrs 30 mins",
+          "winner": "samsung",
+          "highlight": {"none": true}
+        },
+        {
+          "title": "Battery Life (Browsing)",
+          "apple": "6 hrs",
+          "samsung": "7 hrs",
+          "winner": "samsung",
+          "highlight": {"none": true}
+        }
+      ],
+      "conclusion": "Samsung leads with slightly larger capacity and better efficiency.",
+      "depth": {"near": 50, "far": 100}
+    },
+    "chip": {
+      "details": [
+        {
+          "title": "Chipset",
+          "apple": "A4",
+          "samsung": "Hummingbird",
+          "winner": "tie",
+          "highlight": {"processor": true}
+        },
+        {
+          "title": "CPU",
+          "apple": "Single-core 1 GHz",
+          "samsung": "Single-core 1 GHz",
+          "winner": "tie",
+          "highlight": {"processor": true}
+        }
+      ],
+      "conclusion": "Performance was comparable between the two devices.",
+      "depth": {"near": 40, "far": 90}
+    },
+    "fullbody": {
+      "details": [
+        {
+          "title": "Weight",
+          "apple": "137 g",
+          "samsung": "119 g",
+          "winner": "samsung",
+          "highlight": {"none": true}
+        },
+        {
+          "title": "Display Type",
+          "apple": "IPS LCD",
+          "samsung": "Super AMOLED",
+          "winner": "samsung",
+          "highlight": {"screen": true}
+        },
+        {
+          "title": "Resolution",
+          "apple": "640x960 pixels",
+          "samsung": "480x800 pixels",
+          "winner": "apple",
+          "highlight": {"screen": true}
+        },
+        {
+          "title": "Display Size",
+          "apple": "3.5 inches",
+          "samsung": "4.0 inches",
+          "winner": "samsung",
+          "highlight": {"screen": true}
+        }
+      ],
+      "conclusion": "Samsung impressed with AMOLED, but Apple's resolution was sharper.",
+      "depth": {"near": 40, "far": 80}
+    },
+    "camera": {
+      "details": [
+        {
+          "title": "Main Camera",
+          "apple": "5 MP",
+          "samsung": "5 MP",
+          "winner": "tie",
+          "highlight": {"main": true}
+        },
+        {
+          "title": "Video Recording",
+          "apple": "720p",
+          "samsung": "720p",
+          "winner": "tie",
+          "highlight": {"main": true}
+        }
+      ],
+      "conclusion": "Camera performance was evenly matched.",
+      "depth": {"near": 50, "far": 100}
+    },
+    "other": {
+    "price": [
+        {
+            "title": "Base Price",
+            "apple": "$599 usd (iPhone 4)",
+            "samsung": "$549 usd (Galaxy S)",
+            "winner": "samsung"
+        },
+        {
+            "title": "trade in offers",
+            "apple": "No trade-in program",
+            "samsung": "No trade-in program",
+            "winner": "neutral"
+        }
+    ],
+    "device ecosystem": [
+        {
+            "title": "Device integration",
+            "apple": "Limited integration; iTunes required for media sync",
+            "samsung": "No ecosystem; standalone device",
+            "winner": "apple"
+        },
+        {
+            "title": "Content and media",
+            "apple": "iTunes Store dominates with apps and media",
+            "samsung": "Relies on Android Market; fewer apps available",
+            "winner": "apple"
+        },
+        {
+            "title": "Smart home support",
+            "apple": "No smart home focus yet",
+            "samsung": "No smart home focus yet",
+            "winner": "neutral"
+        },
+        {
+            "title": "Wearables",
+            "apple": "No wearable devices available",
+            "samsung": "No wearable devices available",
+            "winner": "neutral"
+        },
+        {
+            "title": "Product lifespan and updates",
+            "apple": "2-3 years of iOS support",
+            "samsung": "1 year of Android updates, fragmented",
+            "winner": "apple"
+        }
+    ],
+    "software": [
+        {
+            "title": "User Interface (UI) Design",
+            "apple": "iOS (then iPhone OS) offers polished, intuitive interface",
+            "samsung": "Basic Android with TouchWiz UI overlay",
+            "winner": "apple"
+        },
+        {
+            "title": "Pre-installed Apps and Bloatware",
+            "apple": "Minimal apps, but locked ecosystem",
+            "samsung": "Limited apps, but Android allows flexibility",
+            "winner": "tie"
+        },
+        {
+            "title": "Availability of Apps and Games",
+            "apple": "App Store dominates with more quality apps",
+            "samsung": "Android Market lags in app selection",
+            "winner": "apple"
+        }
+    ],
+    "security": [
+        {
+            "title": "Biometric Security",
+            "apple": "No biometric features",
+            "samsung": "No biometric features",
+            "winner": "neutral"
+        },
+        {
+            "title": "Privacy Features",
+            "apple": "Basic privacy features; tightly controlled ecosystem",
+            "samsung": "Open Android approach makes it more vulnerable",
+            "winner": "apple"
+        }
+    ],
+    "popularity": [
+        {
+            "title": "Overall Global Sales",
+            "apple": "iPhone 4 revolutionizes the smartphone market",
+            "samsung": "Galaxy S starts gaining traction",
+            "winner": "apple"
+        },
+        {
+            "title": "US Market",
+            "apple": "Dominates with AT&T exclusivity",
+            "samsung": "Less popular in the US",
+            "winner": "apple"
+        },
+        {
+            "title": "European Market",
+            "apple": "Gaining popularity in Western Europe",
+            "samsung": "Widely available across carriers",
+            "winner": "samsung"
+        },
+        {
+            "title": "Asian Market",
+            "apple": "Premium brand, but limited accessibility",
+            "samsung": "Affordable options attract more buyers",
+            "winner": "samsung"
+        }
+    ],
+    "conclusion": "Apple was a pioneer in smartphones, but Samsung offered more accessible alternatives.",
+    "depth": {"near": 150, "far": 200}
+}
+
+    
+  }
+}
