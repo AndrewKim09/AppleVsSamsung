@@ -84,10 +84,10 @@ export function Iphone15FullBody(props: IphoneFullBodyProps) {
 
       <primitive object={new THREE.Line(backpanelLineGeometry, appleLineMaterial)} />
       <Html position={new THREE.Vector3(backpanelLineEnd[0] * 1.1, backpanelLineEnd[1] * 1.3, backpanelLineEnd[2])} zIndexRange={[0,0]} distanceFactor={10}>
-          <div className='w-24 p-1 text-xs lineText'>
-            Matte Glass
-          </div>
-        </Html>
+        <div className='w-24 p-1 text-xs lineText'>
+          Matte Glass
+        </div>
+      </Html>
 
       <group position={[0.027, 0.957 - .5, 0.002]} rotation={[0, -1.571, 0]} scale={[0.748, 1, 1]}>
         <mesh geometry={nodes.Cube039_1.geometry} material={materials.backpanel} />

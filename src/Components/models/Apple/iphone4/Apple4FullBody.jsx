@@ -1,10 +1,67 @@
-import React from 'react'
-import { useGLTF } from '@react-three/drei'
+import React, { useMemo } from 'react'
+import { Html, useGLTF } from '@react-three/drei'
+import * as THREE from 'three'
 
 export function Apple4FullBody(props) {
   const { nodes, materials } = useGLTF('./models/Apple/iphone4/fulllBody.glb')
+
+    const screenLineEnd = [10, 20, 5];
+    const frameLineEnd = [1, 0, 18];
+    const backpanelLineEnd = [-4, -25, 0];
+  
+    const appleLineMaterial = useMemo(() => {
+      return new THREE.LineBasicMaterial({ color: 0xEE4B2B });
+    }, []);
+  
+    const screenLineGeometry = useMemo(() => {
+      const points = [
+        new THREE.Vector3(0, 0, 0),
+        new THREE.Vector3(screenLineEnd[0], screenLineEnd[1], screenLineEnd[2]),
+      ];
+      const geometry = new THREE.BufferGeometry().setFromPoints(points);
+      return geometry;
+    }, [])
+  
+    const frameLineGeometry = useMemo(() => {
+      const points = [
+        new THREE.Vector3(-.4, -.3, 0),
+        new THREE.Vector3(frameLineEnd[0], frameLineEnd[1], frameLineEnd[2]),
+      ];
+      const geometry = new THREE.BufferGeometry().setFromPoints(points);
+      return geometry
+    }, [])
+  
+    const backpanelLineGeometry = useMemo(() => {
+      const points = [
+        new THREE.Vector3(0, 0, 0),
+        new THREE.Vector3(backpanelLineEnd[0], backpanelLineEnd[1], backpanelLineEnd[2]),
+      ];
+      const geometry = new THREE.BufferGeometry().setFromPoints(points);
+      return geometry
+    }, [])
+
   return (
     <group {...props} dispose={null}>
+      <primitive object={new THREE.Line(screenLineGeometry, appleLineMaterial)} />
+      <Html position={new THREE.Vector3(screenLineEnd[0] * 1.1, screenLineEnd[1], screenLineEnd[2] * 1.1)} zIndexRange={[0,0]} distanceFactor={10}>
+          <div className='w-[580px] h-[200px]  p-1 text-[100px] lineText'>
+           IPS LCD
+          </div>
+      </Html>
+
+      <primitive object={new THREE.Line(frameLineGeometry, appleLineMaterial)} />
+      <Html position={new THREE.Vector3(frameLineEnd[0] * 1.1, frameLineEnd[1] * 1.3, frameLineEnd[2] * 1.1)} zIndexRange={[0,0]} distanceFactor={10}>
+          <div className='w-[1080px] h-[200px]  p-1 text-[130px] lineText'>
+            Stainless Steel
+          </div>
+      </Html>
+
+      <primitive object={new THREE.Line(backpanelLineGeometry, appleLineMaterial)} />
+      <Html position={new THREE.Vector3(backpanelLineEnd[0] * 1.1, backpanelLineEnd[1], backpanelLineEnd[2])} zIndexRange={[0,0]} distanceFactor={10}>
+        <div className='w-[1280px] h-[200px]  p-1 text-[130px] lineText'>
+          Corning Gorilla Glass
+        </div>
+      </Html>
       <group position={[0, 0.102, 0.237]} rotation={[-Math.PI / 2, -0.002, Math.PI]}>
         <group rotation={[Math.PI / 2, 0, 0]}>
           <group position={[-1.564, -18.073, -0.114]} scale={[1.834, 14.595, 14.653]}>

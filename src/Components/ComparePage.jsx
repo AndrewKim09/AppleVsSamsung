@@ -327,13 +327,11 @@ export const ComparePage = () => {
         <div className='w-[50vw] h-full flex justify-center items-center'>
           <Section x={2} y={4} z={6} light={1} enableZoom={true} enableRotate={true} cameraRef={appleCameraRef} minAzimuthAngle={appleMinAzimuthAngle} maxAzimuthAngle={appleMaxAzimuthAngle}>
             {currentAppleModel}
-            <axesHelper args={[5]} />
           </Section>
         </div>
         <div className='w-[50vw] h-full flex justify-center items-center'>
           <Section x={2} y={2} z={10} light={1} enableZoom={true} enableRotate={true} cameraRef={samsungCameraRef} minAzimuthAngle={samsungMinAzimuthAngle} maxAzimuthAngle={samsungMaxAzimuthAngle}>
           {currentSamsungModel}
-            <axesHelper args={[5]} />
           </Section>
         </div>
       </div>

@@ -74,7 +74,7 @@ const backpanelLineGeometry = useMemo(() => {
       <primitive object={new THREE.Line(frameLineGeometry, lineMaterial)} />
       <Html position={new THREE.Vector3(frameLineEnd[0] * 1.1, 0.2, frameLineEnd[2] * 1.1)} zIndexRange={[0,0]} distanceFactor={10}>
           <div className='w-24 p-1 text-xs lineText'>
-           Grade 2 Titanium
+           Armor Aluminum
           </div>
       </Html>
 

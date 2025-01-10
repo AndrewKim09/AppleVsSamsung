@@ -1,10 +1,68 @@
-import React from 'react'
-import { useGLTF } from '@react-three/drei'
+import React, { useMemo } from 'react'
+import { Html, useGLTF } from '@react-three/drei'
+import * as THREE from 'three'
 
 export function Apple14FullBody(props) {
   const { nodes, materials } = useGLTF('./models/apple/iphone14/fullBody.glb')
+
+  const appleLineMaterial = useMemo(() => {
+      return new THREE.LineBasicMaterial({ color: 0xEE4B2B });
+    }, []);
+
+    const screenLineEnd = [0.4, -.2, -0.25];
+    const frameLineEnd = [0.4, 0, -0.1];
+    const backpanelLineEnd = [0.1, 0.5, .2];
+
+    const screenLineGeometry = useMemo(() => {
+        const points = [
+          new THREE.Vector3(0, 0, 0),
+          new THREE.Vector3(screenLineEnd[0], screenLineEnd[1], screenLineEnd[2]),
+        ];
+        const geometry = new THREE.BufferGeometry().setFromPoints(points);
+        return geometry;
+      }, [])
+    
+      const frameLineGeometry = useMemo(() => {
+        const points = [
+          new THREE.Vector3(-.05, 0, 0),
+          new THREE.Vector3(frameLineEnd[0], frameLineEnd[1], frameLineEnd[2]),
+        ];
+        const geometry = new THREE.BufferGeometry().setFromPoints(points);
+        return geometry
+      }, [])
+    
+      const backpanelLineGeometry = useMemo(() => {
+        const points = [
+          new THREE.Vector3(0, 0, 0),
+          new THREE.Vector3(backpanelLineEnd[0], backpanelLineEnd[1], backpanelLineEnd[2]),
+        ];
+        const geometry = new THREE.BufferGeometry().setFromPoints(points);
+        return geometry
+      }, [])
+
+
   return (
     <group {...props} dispose={null}>
+      <primitive object={new THREE.Line(screenLineGeometry, appleLineMaterial)} />
+            <Html position={new THREE.Vector3(screenLineEnd[0] , screenLineEnd[1] * 0.7 , screenLineEnd[2])} zIndexRange={[0,0]} distanceFactor={10}>
+                <div className='w-7 p-[1px] text-[2px] lineText'>
+                  Super Retina XDR OLED
+                </div>
+            </Html>
+      
+            <primitive object={new THREE.Line(frameLineGeometry, appleLineMaterial)} />
+            <Html position={new THREE.Vector3(frameLineEnd[0] * 1.3, frameLineEnd[1] * 1.3, frameLineEnd[2])} zIndexRange={[0,0]} distanceFactor={10}>
+                <div className='w-7 p-[1px] text-[2px] lineText'>
+                Surgical-Grade Stainless Steel
+                </div>
+            </Html>
+      
+            <primitive object={new THREE.Line(backpanelLineGeometry, appleLineMaterial)} />
+            <Html position={new THREE.Vector3(backpanelLineEnd[0] * 1, backpanelLineEnd[1] * 1.1, backpanelLineEnd[2])} zIndexRange={[0,0]} distanceFactor={10}>
+                <div className='w-7 p-[1px] text-[2px] lineText'>
+                 Ceramic Shield
+                </div>
+            </Html>
       <group position={[0, -0.237, 0]} rotation={[-Math.PI / 2, 0, 0]} scale={2.888}>
         <group rotation={[Math.PI / 2, 0, 0]} scale={0.01}>
           <mesh geometry={nodes.UCttAeyROPsgmix.geometry} material={materials.KtvhjlxyToKjYkE} />

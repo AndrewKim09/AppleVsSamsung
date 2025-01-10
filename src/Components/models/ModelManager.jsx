@@ -167,7 +167,7 @@ export default class ModelManager {
             <Samsung1Battery setClickedMesh={setClickedMesh} />
           ],
           positions: [[2, 0, 0], [3, 0, 0]],
-          rotationLimits: [Math.PI, 2 * Math.PI, 0.01, Math.PI]
+          rotationLimits: [0.01, Math.PI, 0.01, Math.PI]
         },
         camera: {
           models: [

@@ -100,13 +100,11 @@ export const HomePage = () => {
       <div className='flex w-screen h-screen overflow-hidden'>
           <div className='z-20 w-full h-full overflow-hidden'>
           <Section x={2} y={2} z={10} light={20} orbitRef={appleOrbitRef}>
-            <axesHelper args={[5]} />
             <Iphone15FullBodyMesh/>
           </Section>
           </div>
           <div className='z-20 w-full h-full overflow-hidden'>
             <Section x={5} y={2} z={10} light={5} orbitRef={samsungOrbitRef}>
-              <axesHelper args={[5]} />
               <Samsung24FullBodyMesh/>
             </Section>
           </div>

@@ -1,10 +1,67 @@
-import React from 'react'
-import { useGLTF } from '@react-three/drei'
+import React, { useMemo } from 'react'
+import { Html, useGLTF } from '@react-three/drei'
+import * as THREE from 'three'
 
 export function Samsung1FullBody(props) {
   const { nodes, materials } = useGLTF('./models/samsung/galaxyS/galaxyS.glb')
+
+  const lineMaterial = useMemo(() => {
+    return new THREE.LineBasicMaterial({ color: 0xADD8E6 });
+  }, []);
+  
+  const screenLineEnd = [1, -2.4, 0.5];
+  const frameLineEnd = [0, 0, -1.5];
+  const backpanelLineEnd = [-1, 2.4, -.4];
+  
+  const screenLineGeometry = useMemo(() => {
+    const points = [
+      new THREE.Vector3(0, 0, 0),
+      new THREE.Vector3(screenLineEnd[0], screenLineEnd[1], screenLineEnd[2]),
+    ];
+    const geometry = new THREE.BufferGeometry().setFromPoints(points);
+    return geometry;
+  }, [])
+  
+  const frameLineGeometry = useMemo(() => {
+    const points = [
+      new THREE.Vector3(0, -.3, -1.2),
+      new THREE.Vector3(frameLineEnd[0], frameLineEnd[1], frameLineEnd[2]),
+    ];
+    const geometry = new THREE.BufferGeometry().setFromPoints(points);
+    return geometry
+  }, [])
+  
+  const backpanelLineGeometry = useMemo(() => {
+    const points = [
+      new THREE.Vector3(0, 0, 0),
+      new THREE.Vector3(backpanelLineEnd[0], backpanelLineEnd[1], backpanelLineEnd[2]),
+    ];
+    const geometry = new THREE.BufferGeometry().setFromPoints(points);
+    return geometry
+  }, [])
   return (
     <group {...props} dispose={null}>
+
+      <primitive object={new THREE.Line(screenLineGeometry, lineMaterial)} />
+      <Html position={new THREE.Vector3(screenLineEnd[0], screenLineEnd[1], screenLineEnd[2])} zIndexRange={[0,0]} distanceFactor={10}>
+        <div className='w-[120px] h-[35px] text-[15px] lineText leading-10'>
+          Super AMOLED
+        </div>
+      </Html>
+      
+      <primitive object={new THREE.Line(frameLineGeometry, lineMaterial)} />
+      <Html position={new THREE.Vector3(frameLineEnd[0], frameLineEnd[1] * 1.2, frameLineEnd[2])} zIndexRange={[0,0]} distanceFactor={10} heig>
+        <div className='w-[80px] h-[35px] text-[15px] lineText leading-10'>
+          Plastic
+        </div>
+      </Html>
+      
+      <primitive object={new THREE.Line(backpanelLineGeometry, lineMaterial)} />
+      <Html position={new THREE.Vector3(backpanelLineEnd[0] * 1.1, backpanelLineEnd[1] * 1.1, backpanelLineEnd[2] * 1.1)} zIndexRange={[0,0]} distanceFactor={10}>
+        <div className='w-[80px] h-[35px] text-[15px] lineText leading-10'>
+          Plastic
+        </div>
+      </Html>
       <mesh geometry={nodes.Cube.geometry} material={materials.Material} position={[0, -0.241, 0]} scale={[0.867, 0.801, 0.761]} />
       <mesh geometry={nodes.Plane.geometry} material={materials['Material.007']} position={[0.19, -0.227, 0]} rotation={[0, 0, -Math.PI / 2]} scale={[0.854, 1, 0.654]} />
       <mesh geometry={nodes.Cube003.geometry} material={materials['Material.006']} position={[0.003, -0.247, 0.002]} scale={[0.867, 0.783, 0.727]} />

@@ -8,6 +8,7 @@ export function Apple4Battery(props) {
       <group rotation={[Math.PI / 2, 0, -Math.PI / 2]}>
         <mesh geometry={nodes.battery_1.geometry} material={materials.battery} />
         <mesh geometry={nodes.battery_2.geometry} material={materials['Material.001']} />
+        <mesh geometry={nodes.battery_3.geometry} material={materials['Material.002']} />
       </group>
     </group>
   )

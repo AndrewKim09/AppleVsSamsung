@@ -1,10 +1,67 @@
 import React from 'react'
-import { useGLTF } from '@react-three/drei'
+import { Html, useGLTF } from '@react-three/drei'
+import { useMemo } from 'react';
+import * as THREE from 'three';
 
 export function Samsung23FullBody(props) {
   const { nodes, materials } = useGLTF('./models/Samsung/s23ultra/samsungs23ultra.glb') 
+  const lineMaterial = useMemo(() => {
+    return new THREE.LineBasicMaterial({ color: 0xADD8E6 });
+  }, []);
+  
+  const screenLineEnd = [0.05, -.05, 0.1];
+  const frameLineEnd = [0.04, 0.16, 0];
+  const backpanelLineEnd = [0.1, 0.1, -.1];
+
+  const screenLineGeometry = useMemo(() => {
+    const points = [
+      new THREE.Vector3(0, 0, 0),
+      new THREE.Vector3(screenLineEnd[0], screenLineEnd[1], screenLineEnd[2]),
+    ];
+    const geometry = new THREE.BufferGeometry().setFromPoints(points);
+    return geometry;
+  }, [])
+  
+  const frameLineGeometry = useMemo(() => {
+    const points = [
+      new THREE.Vector3(0, 0, 0),
+      new THREE.Vector3(frameLineEnd[0], frameLineEnd[1], frameLineEnd[2]),
+    ];
+    const geometry = new THREE.BufferGeometry().setFromPoints(points);
+    return geometry
+  }, [])
+  
+  const backpanelLineGeometry = useMemo(() => {
+    const points = [
+      new THREE.Vector3(0, 0, 0),
+      new THREE.Vector3(backpanelLineEnd[0], backpanelLineEnd[1], backpanelLineEnd[2]),
+    ];
+    const geometry = new THREE.BufferGeometry().setFromPoints(points);
+    return geometry
+  }, [])
+  
   return (
     <group {...props} dispose={null}>
+      <primitive object={new THREE.Line(screenLineGeometry, lineMaterial)} />
+      <Html position={new THREE.Vector3(screenLineEnd[0], screenLineEnd[1], screenLineEnd[2])} zIndexRange={[0,0]} distanceFactor={10}>
+        <div className='w-3 p-[0.4px] px-[0.2px] text-[0.7px] lineText'>
+          Dynamic AMOLED 2X
+        </div>
+      </Html>
+      
+      <primitive object={new THREE.Line(frameLineGeometry, lineMaterial)} />
+      <Html position={new THREE.Vector3(frameLineEnd[0], frameLineEnd[1] * 1.2, frameLineEnd[2])} zIndexRange={[0,0]} distanceFactor={10}>
+        <div className='w-4 p-[1px] text-[1px] lineText leading-[2px]'>
+          Grade 2 Titanium
+        </div>
+      </Html>
+      
+      <primitive object={new THREE.Line(backpanelLineGeometry, lineMaterial)} />
+      <Html position={new THREE.Vector3(backpanelLineEnd[0] * 1.1, backpanelLineEnd[1] * 1.3, backpanelLineEnd[2] * 1.1)} zIndexRange={[0,0]} distanceFactor={10}>
+        <div className='w-4 p-[0.5px]  text-[1px] lineText leading-[1px]'>
+          Corning Gorilla Glass Victus 2
+        </div>
+      </Html>
       <group position={[0.014, 0, 0]}>
         <mesh geometry={nodes.Cube003.geometry} material={materials['screen outline']} />
         <mesh geometry={nodes.Cube003_1.geometry} material={materials.side} />

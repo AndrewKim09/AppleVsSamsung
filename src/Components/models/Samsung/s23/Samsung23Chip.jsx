@@ -3,6 +3,7 @@ import { useGLTF } from '@react-three/drei'
 
 export function Samsung23Chip(props) {
   const { nodes, materials } = useGLTF('./models/Samsung/s23ultra/Chip.glb')
+
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.mainBoard.geometry} material={materials.mainBoard} rotation={[Math.PI / 2, 0, -Math.PI / 2]} scale={-4.227} />
