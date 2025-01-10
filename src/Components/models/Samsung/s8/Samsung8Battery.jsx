@@ -2,7 +2,7 @@ import React from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Samsung8Battery(props) {
-  const { nodes, materials } = useGLTF('./models/Samsung/galaxys8/battery.glb')
+  const { nodes, materials } = useGLTF('/models/Samsung/galaxys8/battery.glb')
   return (
     <group {...props} dispose={null}>
       <group rotation={[Math.PI / 2, 0, -Math.PI / 2]}>

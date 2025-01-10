@@ -3,7 +3,7 @@ import { Html, useGLTF } from '@react-three/drei'
 import * as THREE from 'three'
 
 export function Apple4FullBody(props) {
-  const { nodes, materials } = useGLTF('./models/Apple/iphone4/fulllBody.glb')
+  const { nodes, materials } = useGLTF('/models/Apple/iphone4/fulllBody.glb')
 
     const screenLineEnd = [10, 20, 5];
     const frameLineEnd = [1, 0, 18];

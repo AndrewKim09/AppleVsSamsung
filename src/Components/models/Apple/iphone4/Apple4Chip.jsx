@@ -2,7 +2,7 @@ import React from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Apple4Chip(props) {
-  const { nodes, materials } = useGLTF('./models/Apple/iphone4/cpu.glb')
+  const { nodes, materials } = useGLTF('/models/Apple/iphone4/cpu.glb')
   return (
     <group {...props} dispose={null}>
       <group rotation={[Math.PI / 2, 0, -Math.PI / 2]}>

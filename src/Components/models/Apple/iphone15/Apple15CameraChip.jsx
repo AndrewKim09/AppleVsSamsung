@@ -3,7 +3,7 @@ import React, { useState, useMemo, useEffect } from 'react'
 import * as THREE from 'three'
 
 export const Apple15CameraChip = (props) => {
-  const { nodes, materials } = useGLTF('./models/apple/ACameraChip.glb')
+  const { nodes, materials } = useGLTF('/models/apple/ACameraChip.glb')
   
   const [mainCameraHovered, setMainCameraHovered] = useState(false)
   const [ultraWideCameraHovered, setUltraWideCameraHovered] = useState(false)

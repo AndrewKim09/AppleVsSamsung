@@ -3,7 +3,7 @@ import { Html, useGLTF } from '@react-three/drei'
 import * as THREE from 'three'
 
 export function Samsung8FullBody(props) {
-  const { nodes, materials } = useGLTF('./models/Samsung/galaxys8/galaxy_s8.glb')
+  const { nodes, materials } = useGLTF('/models/Samsung/galaxys8/galaxy_s8.glb')
   const lineMaterial = useMemo(() => {
       return new THREE.LineBasicMaterial({ color: 0xADD8E6 });
     }, []);

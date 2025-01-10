@@ -3,7 +3,7 @@ import { Html, useGLTF } from '@react-three/drei'
 import * as THREE from 'three'
 
 export function Apple14FullBody(props) {
-  const { nodes, materials } = useGLTF('./models/apple/iphone14/fullBody.glb')
+  const { nodes, materials } = useGLTF('/models/apple/iphone14/fullBody.glb')
 
   const appleLineMaterial = useMemo(() => {
       return new THREE.LineBasicMaterial({ color: 0xEE4B2B });

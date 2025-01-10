@@ -3,7 +3,7 @@ import React, { useEffect, useLayoutEffect, useMemo, useState } from "react";
 import * as THREE from "three";
 
 export const Samsung24CameraChip = (props) => {
-  const { nodes, materials } = useGLTF("./models/samsung/SCameraChip.glb");
+  const { nodes, materials } = useGLTF("/models/samsung/SCameraChip.glb");
   const frame = new THREE.MeshStandardMaterial({
     color: 0xb6b6b6,
     roughness: 0,

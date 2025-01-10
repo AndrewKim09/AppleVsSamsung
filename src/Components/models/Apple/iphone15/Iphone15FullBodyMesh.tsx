@@ -9,7 +9,7 @@ interface IphoneFullBodyProps {
 
 export function Iphone15FullBodyMesh(props: IphoneFullBodyProps) {
   const { camera, size } = useThree();
-  const { nodes, materials } = useGLTF('./models/iPhoneFullBody2.glb') as any;
+  const { nodes, materials } = useGLTF('/models/iPhoneFullBody2.glb') as any;
 
   const blackMaterial = useMemo(() => new THREE.MeshBasicMaterial({ color: 0x000000 }), []);
 

@@ -2,7 +2,7 @@ import React from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Samsung23Chip(props) {
-  const { nodes, materials } = useGLTF('./models/Samsung/s23ultra/Chip.glb')
+  const { nodes, materials } = useGLTF('/models/Samsung/s23ultra/Chip.glb')
 
   return (
     <group {...props} dispose={null}>

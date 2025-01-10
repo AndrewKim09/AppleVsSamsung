@@ -3,7 +3,7 @@ import { Html, useGLTF } from '@react-three/drei'
 import * as THREE from 'three'
 
 export function Apple14Camera(props) {
-  const { nodes, materials } = useGLTF('./models/apple/iphone14/camera.glb')
+  const { nodes, materials } = useGLTF('/models/apple/iphone14/camera.glb')
   const ultraWideLineEnd = [0.2, 0.3, 0.6]
     const telephotoLineEnd = [0.2, .5, .2]
     const mainLineEnd = [0,-.2,.6]
