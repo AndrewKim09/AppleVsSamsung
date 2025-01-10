@@ -2,7 +2,7 @@ import React from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Samsung8Chip(props) {
-  const { nodes, materials } = useGLTF('/models/Samsung/galaxys8/cpu.glb')
+  const { nodes, materials } = useGLTF('/models/Samsung/galaxys8/cpu.json')
   return (
     <group {...props} dispose={null}>
       <group rotation={[Math.PI / 2, 0, -Math.PI / 2]}>
@@ -14,4 +14,4 @@ export function Samsung8Chip(props) {
   )
 }
 
-useGLTF.preload('./models/Samsung/galaxys8/cpu.glb')
+useGLTF.preload('./models/Samsung/galaxys8/cpu.json')

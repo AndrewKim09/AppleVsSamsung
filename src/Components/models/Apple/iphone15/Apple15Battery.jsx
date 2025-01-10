@@ -2,7 +2,7 @@ import { useGLTF } from '@react-three/drei'
 import React from 'react'
 
 export const Apple15Battery = (props) => {
-  const { nodes, materials } = useGLTF('/models/apple/ABattery.glb')
+  const { nodes, materials } = useGLTF('/models/apple/ABattery.json')
   return (
     <group {...props} dispose={null}>
       <group rotation={[Math.PI / 2, 0, Math.PI / 2]} scale={1.693}>
@@ -13,5 +13,5 @@ export const Apple15Battery = (props) => {
   )
 }
 
-useGLTF.preload('/models/apple/ABattery.glb')
+useGLTF.preload('/models/apple/ABattery.json')
 

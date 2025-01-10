@@ -3,7 +3,7 @@ import { Html, useGLTF } from '@react-three/drei'
 import * as THREE from 'three'
 
 export function Samsung23CameraChip(props) {
-  const { nodes, materials } = useGLTF('/models/Samsung/s23ultra/23CameraChip.glb')
+  const { nodes, materials } = useGLTF('/models/Samsung/s23ultra/23CameraChip.json')
 
   const lineMaterial = useMemo(() => {
       return new THREE.LineBasicMaterial({ color: 0xADD8E6 });
@@ -80,4 +80,4 @@ export function Samsung23CameraChip(props) {
   )
 }
 
-useGLTF.preload('./models/Samsung/s23ultra/23CameraChip.glb')
+useGLTF.preload('./models/Samsung/s23ultra/23CameraChip.json')

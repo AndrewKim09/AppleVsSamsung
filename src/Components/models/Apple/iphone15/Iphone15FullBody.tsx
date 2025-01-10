@@ -10,7 +10,7 @@ interface IphoneFullBodyProps {
 export function Iphone15FullBody(props: IphoneFullBodyProps) {
   const [screenHovered, setScreenHovered] = useState(false);
   const { camera, size } = useThree();
-  const { nodes, materials } = useGLTF('/models/iPhoneFullBody2.glb') as any;
+  const { nodes, materials } = useGLTF('/models/iPhoneFullBody2.json') as any;
 
   //----------LINES----------
   const screenLineEnd = [-2, 1, 0.5];
@@ -137,4 +137,4 @@ export function Iphone15FullBody(props: IphoneFullBodyProps) {
   );
 }
 
-useGLTF.preload('./models/iPhoneFullBody2.glb');
+useGLTF.preload('./models/iPhoneFullBody2.json');

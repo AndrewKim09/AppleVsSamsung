@@ -2,7 +2,7 @@ import React from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function AppleXBattery(props) {
-  const { nodes, materials } = useGLTF('./models/Apple/iphonex/battery.glb')
+  const { nodes, materials } = useGLTF('./models/Apple/iphonex/battery.json')
   return (
     <group {...props} dispose={null}>
       <group rotation={[Math.PI / 2, 0, -Math.PI / 2]}>
@@ -14,4 +14,4 @@ export function AppleXBattery(props) {
   )
 }
 
-useGLTF.preload('./models/Apple/iphonex/battery.glb')
+useGLTF.preload('./models/Apple/iphonex/battery.json')

@@ -3,7 +3,7 @@ import React, { useEffect, useMemo, useState } from 'react'
 import * as THREE from 'three'
 
 export const Samsung24Chip = (props) => {
-  const { nodes, materials } = useGLTF('/models/samsung/SChip.glb')
+  const { nodes, materials } = useGLTF('/models/samsung/SChip.json')
   const hoveredMaterial = useMemo(() => 
     new THREE.MeshBasicMaterial({ color: 0x3BB143, side: THREE.DoubleSide, transparent: true, opacity: 0.5 }), []
   )
@@ -90,4 +90,4 @@ export const Samsung24Chip = (props) => {
   )
 }
 
-useGLTF.preload('/models/samsung/SChip.glb')
+useGLTF.preload('/models/samsung/SChip.json')

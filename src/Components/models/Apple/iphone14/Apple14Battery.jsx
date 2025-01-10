@@ -2,7 +2,7 @@ import React from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Apple14Battery(props) {
-  const { nodes, materials } = useGLTF('/models/apple/iphone14/battery.glb')
+  const { nodes, materials } = useGLTF('/models/apple/iphone14/battery.json')
   console.log(nodes, materials)
   return (
     <group {...props} dispose={null}>
@@ -14,4 +14,4 @@ export function Apple14Battery(props) {
   )
 }
 
-useGLTF.preload('./models/apple/iphone14/battery.glb')
+useGLTF.preload('./models/apple/iphone14/battery.json')

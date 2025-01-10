@@ -3,7 +3,7 @@ import { useFrame } from '@react-three/fiber';
 import React, { useReducer, useRef } from 'react'
 
 export const Ecosystem = (props) => {
-  const { nodes, materials } = useGLTF('/models/ecosystem.glb')
+  const { nodes, materials } = useGLTF('/models/ecosystem.json')
   const groupRef = useRef();
   useFrame(() => {
     if (groupRef.current) {
@@ -137,4 +137,4 @@ export const Ecosystem = (props) => {
     </group>
   )
 }
-useGLTF.preload('/models/ecosystem.glb')
+useGLTF.preload('/models/ecosystem.json')

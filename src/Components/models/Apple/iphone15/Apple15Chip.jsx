@@ -3,7 +3,7 @@ import React, { useEffect, useMemo, useState } from 'react'
 import * as THREE from 'three'
 
 export const Apple15Chip = (props) => {
-  const { nodes, materials } = useGLTF('/models/apple/AChip.glb')
+  const { nodes, materials } = useGLTF('/models/apple/AChip.json')
   const testMaterial = new THREE.MeshStandardMaterial({ color: 0xffffff })
   const hoveredMaterial = useMemo(() => 
     new THREE.MeshBasicMaterial({ color: 0x3BB143, side: THREE.DoubleSide, transparent: true, opacity: 0.5 }), []
@@ -125,4 +125,4 @@ export const Apple15Chip = (props) => {
     </group>
   )
 }
-useGLTF.preload('/models/apple/AChip.glb')
+useGLTF.preload('/models/apple/AChip.json')

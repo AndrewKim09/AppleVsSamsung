@@ -3,7 +3,7 @@ import { useGLTF, Html } from '@react-three/drei'
 import * as THREE from 'three'
 
 export function AppleXCameraChip(props) {
-  const { nodes, materials } = useGLTF('./models/Apple/iphonex/camera.glb')
+  const { nodes, materials } = useGLTF('./models/Apple/iphonex/camera.json')
   const appleLineMaterial = useMemo(() => {
     return new THREE.LineBasicMaterial({ color: 0xEE4B2B });
   }, []);
@@ -55,4 +55,4 @@ export function AppleXCameraChip(props) {
   )
 }
 
-useGLTF.preload('./models/Apple/iphonex/camera.glb')
+useGLTF.preload('./models/Apple/iphonex/camera.json')

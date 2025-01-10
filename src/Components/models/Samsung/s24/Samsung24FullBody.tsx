@@ -7,7 +7,7 @@ export const FLOOR_HEIGHT = 2.3;
 export const NB_FLOORS = 3;
 
 export function Samsung24FullBody(props) {
-  const { nodes, materials } = useGLTF('/models/SamsungFullBody.glb') as any
+  const { nodes, materials } = useGLTF('/models/SamsungFullBody.json') as any
   const ref = useRef<Group>(null);
 
   const [screenHovered, setScreenHovered] = useState(false);
@@ -128,4 +128,4 @@ const backpanelLineGeometry = useMemo(() => {
   )
 }
 
-useGLTF.preload('./models/SamsungFullBody.glb')
+useGLTF.preload('./models/SamsungFullBody.json')

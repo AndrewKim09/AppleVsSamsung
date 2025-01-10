@@ -4,7 +4,7 @@ import React, { useMemo, useRef } from 'react'
 import * as THREE from 'three'
 
 export const Globe = (props) => {
-  const { nodes, materials } = useGLTF('/models/globe.glb')
+  const { nodes, materials } = useGLTF('/models/globe.json')
   const globeRef = useRef()
   const emissiveMaterial = useMemo(() => 
     new THREE.MeshStandardMaterial({
@@ -76,4 +76,4 @@ export const Globe = (props) => {
   )
 }
 
-useGLTF.preload('/models/globe.glb')
+useGLTF.preload('/models/globe.json')

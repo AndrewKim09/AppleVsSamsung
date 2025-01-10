@@ -3,7 +3,7 @@ import { useFrame } from '@react-three/fiber'
 import React, { useRef } from 'react'
 
 export const Money = (props) => {
-  const { nodes, materials } = useGLTF('/models/money.glb')
+  const { nodes, materials } = useGLTF('/models/money.json')
   const moneyRef = useRef()
   useFrame(() => {
     if (moneyRef.current) {
@@ -20,4 +20,4 @@ export const Money = (props) => {
   )
 }
 
-useGLTF.preload('/models/money.glb')
+useGLTF.preload('/models/money.json')
