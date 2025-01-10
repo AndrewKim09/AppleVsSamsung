@@ -7,7 +7,7 @@ export const FLOOR_HEIGHT = 2.3;
 export const NB_FLOORS = 3;
 
 export function Samsung24FullBodyMesh(props) {
-  const { nodes, materials } = useGLTF('models/SamsungFullBody.json') as any
+  const { nodes, materials } = useGLTF('/models/SamsungFullBody.json') as any
   const ref = useRef<Group>(null);
   
   return (
@@ -54,4 +54,4 @@ export function Samsung24FullBodyMesh(props) {
   )
 }
 
-useGLTF.preload('models/SamsungFullBody.json')
+useGLTF.preload('/models/SamsungFullBody.json')
