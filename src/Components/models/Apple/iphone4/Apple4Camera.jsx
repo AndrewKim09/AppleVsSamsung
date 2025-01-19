@@ -2,7 +2,7 @@ import React from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Apple4Camera(props) {
-  const { nodes, materials } = useGLTF('/models/Apple/iphone4/backCamera.json')
+  const { nodes, materials } = useGLTF('/models/apple/iphone4/backCamera.json')
   return (
     <group {...props} dispose={null}>
       <group rotation={[Math.PI / 2, 0, -Math.PI / 2]}>
@@ -15,4 +15,4 @@ export function Apple4Camera(props) {
   )
 }
 
-useGLTF.preload('/models/Apple/iphone4/backCamera.json')
+useGLTF.preload('/models/apple/iphone4/backCamera.json')
