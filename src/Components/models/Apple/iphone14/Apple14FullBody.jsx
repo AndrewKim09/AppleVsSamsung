@@ -126,4 +126,4 @@ export function Apple14FullBody(props) {
   )
 }
 
-useGLTF.preload('./models/apple/iphone14/fullBody.json')
+useGLTF.preload('/models/apple/iphone14/fullBody.json')

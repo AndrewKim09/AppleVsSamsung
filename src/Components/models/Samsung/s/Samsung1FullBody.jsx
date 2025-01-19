@@ -89,4 +89,4 @@ export function Samsung1FullBody(props) {
   )
 }
 
-useGLTF.preload('./models/samsung/galaxyS/galaxyS.json')
+useGLTF.preload('/models/samsung/galaxyS/galaxyS.json')

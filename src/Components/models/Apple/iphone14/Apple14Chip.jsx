@@ -14,4 +14,4 @@ export function Apple14Chip(props) {
   )
 }
 
-useGLTF.preload('./models/apple/iphone14/chip.json')
+useGLTF.preload('/models/apple/iphone14/chip.json')

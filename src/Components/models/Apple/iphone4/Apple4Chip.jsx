@@ -13,4 +13,4 @@ export function Apple4Chip(props) {
   )
 }
 
-useGLTF.preload('./models/Apple/iphone4/cpu.json')
+useGLTF.preload('/models/apple/iphone4/cpu.json')

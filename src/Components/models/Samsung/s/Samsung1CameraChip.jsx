@@ -2,7 +2,7 @@ import React from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Samsung1CameraChip(props) {
-  const { nodes, materials } = useGLTF('/models/Samsung/galaxyS/backCamera.json')
+  const { nodes, materials } = useGLTF('/models/samsung/galaxyS/backCamera.json')
   return (
     <group {...props} dispose={null}>
       <group position={[-0.005, 0, 0]} rotation={[Math.PI / 2, 0, -Math.PI / 2]}>
@@ -15,4 +15,4 @@ export function Samsung1CameraChip(props) {
   )
 }
 
-useGLTF.preload('./models/Samsung/galaxyS/backCamera.json')
+useGLTF.preload('/models/samsung/galaxyS/backCamera.json')

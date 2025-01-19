@@ -137,4 +137,4 @@ export function Iphone15FullBody(props: IphoneFullBodyProps) {
   );
 }
 
-useGLTF.preload('./models/iPhoneFullBody2.json');
+useGLTF.preload('/models/iPhoneFullBody2.json');

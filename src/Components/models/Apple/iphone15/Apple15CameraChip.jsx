@@ -136,4 +136,4 @@ export const Apple15CameraChip = (props) => {
   )
 }
 
-useGLTF.preload('./models/apple/ACameraChip.json')
+useGLTF.preload('/models/apple/ACameraChip.json')

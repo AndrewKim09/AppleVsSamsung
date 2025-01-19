@@ -15,4 +15,4 @@ export function Apple4Camera(props) {
   )
 }
 
-useGLTF.preload('./models/Apple/iphone4/backCamera.json')
+useGLTF.preload('/models/Apple/iphone4/backCamera.json')

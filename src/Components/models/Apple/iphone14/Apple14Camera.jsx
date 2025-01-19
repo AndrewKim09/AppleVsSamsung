@@ -66,4 +66,4 @@ export function Apple14Camera(props) {
   )
 }
 
-useGLTF.preload('./models/apple/iphone14/camera.json')
+useGLTF.preload('/models/apple/iphone14/camera.json')

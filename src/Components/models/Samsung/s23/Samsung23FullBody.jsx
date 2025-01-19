@@ -4,7 +4,7 @@ import { useMemo } from 'react';
 import * as THREE from 'three';
 
 export function Samsung23FullBody(props) {
-  const { nodes, materials } = useGLTF('/models/Samsung/s23ultra/samsungs23ultra.json') 
+  const { nodes, materials } = useGLTF('/models/samsung/s23ultra/samsungs23ultra.json') 
   const lineMaterial = useMemo(() => {
     return new THREE.LineBasicMaterial({ color: 0xADD8E6 });
   }, []);
@@ -84,4 +84,4 @@ export function Samsung23FullBody(props) {
   )
 }
 
-useGLTF.preload('./models/Samsung/s23ultra/samsungs23ultra.json')
+useGLTF.preload('/models/samsung/s23ultra/samsungs23ultra.json')

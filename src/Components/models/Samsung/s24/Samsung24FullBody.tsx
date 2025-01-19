@@ -128,4 +128,4 @@ const backpanelLineGeometry = useMemo(() => {
   )
 }
 
-useGLTF.preload('./models/SamsungFullBody.json')
+useGLTF.preload('/models/SamsungFullBody.json')

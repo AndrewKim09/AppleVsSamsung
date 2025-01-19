@@ -2,7 +2,7 @@ import React from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Samsung8Battery(props) {
-  const { nodes, materials } = useGLTF('/models/Samsung/galaxys8/battery.json')
+  const { nodes, materials } = useGLTF('/models/samsung/galaxys8/battery.json')
   return (
     <group {...props} dispose={null}>
       <group rotation={[Math.PI / 2, 0, -Math.PI / 2]}>
@@ -13,4 +13,4 @@ export function Samsung8Battery(props) {
   )
 }
 
-useGLTF.preload('./models/Samsung/galaxys8/battery.json')
+useGLTF.preload('/models/samsung/galaxys8/battery.json')
