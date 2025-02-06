@@ -15,7 +15,7 @@ const Section = (props) => {
           position: [props.x, props.y, props.z],
         }} style={{ pointerEvents: 'auto' }}> 
           <ambientLight intensity={props.light} />
-          <OrbitControls enableZoom={true} enableRotate={true} enablePan={true} ref={props.orbitRef? props.orbitRef : null}/>
+          <OrbitControls enableZoom={true} enableRotate={true} enablePan={false} ref={props.orbitRef? props.orbitRef : null}/>
           
           <ScrollControls>
             {props.children}

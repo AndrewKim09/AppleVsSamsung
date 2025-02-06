@@ -132,7 +132,7 @@ export default class ModelManager {
             <AppleXBattery setClickedMesh={setClickedMesh} />,
             <Samsung8Battery setClickedMesh={setClickedMesh} />
           ],
-          positions: [[2, 0, 0], [6, 0, 0]],
+          positions: [[2, 0, 0], [2, 0, 0]],
           rotationLimits: [0.01, Math.PI, 0.01, Math.PI]
         },
         camera: {

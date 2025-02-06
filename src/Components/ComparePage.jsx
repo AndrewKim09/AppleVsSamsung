@@ -17,6 +17,9 @@ const Background = (props) => {
   useEffect(() => {
     const startAnimation = () => {
       const backgroundTimeline = gsap.timeline();
+      setTimeout(() => {
+        props.setPlaying(false);
+      }, 1500);
       backgroundTimeline.fromTo(
         meshRef.current.scale,
         { x: 0, y: 0, z: 0 }, // starting scale
@@ -170,29 +173,11 @@ const ActiveButton = (props) => {
   )
 }
 
-const onHover = (id) => {
-  console.log(id);
-  const element = document.getElementById(id);
-  const image = document.getElementById(`image${id}`);
-
-  element.style.opacity = 1;
-  image.style.opacity = 1;
-  image.style.top = '-350px';
-}
-
-const onLeave = (id) => {
-  const element = document.getElementById(id);
-  const image = document.getElementById(`image${id}`);
-
-  image.style.opacity = 0;
-  element.style.opacity = 0;
-  image.style.top = '-250px';
-}
-
 export const ComparePage = () => {
   const [currentSection, setCurrentSection] = useState("");
   const [year, setYear] = useState("2024");
   const [timeLine, setTimeLine] = useState(true);
+  const [playing, setPlaying] = useState(true);
 
   const depthTimeline = gsap.timeline();
 
@@ -220,6 +205,7 @@ export const ComparePage = () => {
 
   const onChangeModels = (models, section, positions, appleMinAzimuthAngle, appleMaxAzimuthAngle, samsungMinAzimuthAngle, samsungMaxAzimuthAngle) => {
     setOtherTab(false);
+    if(playing) return;
     if(!depthTimeline.isActive()) {
         setAppleMinAzimuthAngle(appleMinAzimuthAngle);
         setAppleMaxAzimuthAngle(appleMaxAzimuthAngle);
@@ -239,16 +225,6 @@ export const ComparePage = () => {
     }
   };
 
-  // const navBarAnimation = () => {
-  //   gsap.timeline().to(navBarRef.current, {
-  //     width: '100vw',
-  //     duration: 1.5,
-  //     delay: 1.5,
-  //     ease: 'power2.inOut',
-  //   }
-  //   )
-  // }
-
   const changeYear = (year) => {
     setCurrentAppleModel(null);
     setCurrentSamsungModel(null);
@@ -257,16 +233,25 @@ export const ComparePage = () => {
     setTimeLine(false);
   }
 
-
-
-  // useEffect(() => {
-  //   if (document.readyState === 'complete') {
-  //     navBarAnimation(); // Start immediately if already loaded
-  //   } else {
-  //     window.addEventListener('load', navBarAnimation); // Wait for load event if still loading
-  //     return () => window.removeEventListener('load', navBarAnimation); // Cleanup
-  //   }
-  // },[]);
+  const onHover = (id) => {
+    if(playing) return;
+    console.log(id);
+    const element = document.getElementById(id);
+    const image = document.getElementById(`image${id}`);
+  
+    element.style.opacity = 1;
+    image.style.opacity = 1;
+    image.style.top = '-350px';
+  }
+  
+  const onLeave = (id) => {
+    const element = document.getElementById(id);
+    const image = document.getElementById(`image${id}`);
+  
+    image.style.opacity = 0;
+    element.style.opacity = 0;
+    image.style.top = '-250px';
+  }
 
   console.log(year);
   
@@ -285,6 +270,7 @@ export const ComparePage = () => {
             setCurrentFar={setCurrentFar}
             currentSection={currentSection}
             depthTimeline={depthTimeline}
+            setPlaying={setPlaying}
           />
         </Section>
       </div>
