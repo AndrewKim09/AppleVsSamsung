@@ -1,10 +1,12 @@
-import { Environment, OrbitControls, Scroll, ScrollControls } from '@react-three/drei'
-import React, { useRef, useState } from 'react'
+import { Environment, OrbitControls, Scroll, ScrollControls, useProgress } from '@react-three/drei'
+import React, { Suspense, useRef, useState } from 'react'
 import gsap from 'gsap'
 import { useNavigate } from 'react-router-dom'
 import { Canvas } from '@react-three/fiber'
 import { Samsung24FullBodyMesh } from './models/Samsung/s24/Samsung24FullBodyMesh.tsx'
 import { Iphone15FullBodyMesh } from './models/Apple/iphone15/Iphone15FullBodyMesh.tsx'
+import { ClipLoader } from 'react-spinners';
+import Loader from './Loader.jsx'
 
 const Section = (props) => {
   
@@ -18,7 +20,7 @@ const Section = (props) => {
           <OrbitControls enableZoom={true} enableRotate={true} enablePan={false} ref={props.orbitRef? props.orbitRef : null}/>
           
           <ScrollControls>
-            {props.children}
+            <Suspense fallback={null}>{props.children}</Suspense>
           </ScrollControls>
           <Environment  preset='studio' background={false} />
         </Canvas>
@@ -98,16 +100,18 @@ export const HomePage = () => {
   };
   return (
       <div className='flex w-screen h-screen overflow-hidden'>
-          <div className='z-20 w-full h-full overflow-hidden'>
-          <Section x={2} y={2} z={10} light={20} orbitRef={appleOrbitRef}>
-            <Iphone15FullBodyMesh/>
-          </Section>
-          </div>
-          <div className='z-20 w-full h-full overflow-hidden'>
-            <Section x={5} y={2} z={10} light={5} orbitRef={samsungOrbitRef}>
-              <Samsung24FullBodyMesh/>
+        <Suspense fallback={<Loader />}>
+          <div className="z-20 w-full h-full overflow-hidden">
+            <Section x={2} y={2} z={10} light={20} orbitRef={appleOrbitRef}>
+              <Iphone15FullBodyMesh />
             </Section>
           </div>
+          <div className="z-20 w-full h-full overflow-hidden">
+            <Section x={5} y={2} z={10} light={5} orbitRef={samsungOrbitRef}>
+              <Samsung24FullBodyMesh />
+            </Section>
+          </div>
+        </Suspense>
 
       <div className='absolute h-[100%] z-0 w-[50%] bg-gradient-to-tl from-red-300 to-red-600 overflow-hidden'></div>
       <div className='absolute right-0 h-[100%] z-0 w-[50%] bg-gradient-to-tr from-blue-300 to-blue-600 overflow-hidden'></div>

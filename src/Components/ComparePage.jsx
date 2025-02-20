@@ -1,9 +1,9 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { Suspense, useEffect, useRef, useState } from 'react'
 import { Depth, LayerMaterial, Noise } from 'lamina'
 
 import * as THREE from 'three'
 import { Canvas, useThree } from '@react-three/fiber'
-import { Environment, OrbitControls, ScrollControls } from '@react-three/drei'
+import { Environment, Loader, OrbitControls, ScrollControls } from '@react-three/drei'
 import gsap from 'gsap'
 import { CompareTables } from './CompareTables.jsx'
 import specs from '../specs.json'
@@ -53,9 +53,7 @@ const Background = (props) => {
 
 
   useEffect(() => {
-    console.log(props.currentSection);
     if (props.near && props.far && props.near != props.currentNear && props.far != props.currentFar) {
-      console.log(props.currentSection);
       props.depthTimeline.fromTo(depthRef.current, {
         near: props.currentNear,
         far: props.currentFar
@@ -145,7 +143,9 @@ const Section = (props) => {
         enablePan={false}
         ref={orbitControlsRef}
       />
-      <ScrollControls>{props.children}</ScrollControls>
+      <ScrollControls>
+        <Suspense fallback={null}>{props.children}</Suspense>
+      </ScrollControls>
       {/* Use the CameraHelper to handle the camera ref and position */}
       <CameraHelper cameraRef={props.cameraRef} position={props.cameraPosition} />
       <Environment  preset='studio' background={false} />
@@ -235,7 +235,6 @@ export const ComparePage = () => {
 
   const onHover = (id) => {
     if(playing) return;
-    console.log(id);
     const element = document.getElementById(id);
     const image = document.getElementById(`image${id}`);
   
@@ -252,8 +251,6 @@ export const ComparePage = () => {
     element.style.opacity = 0;
     image.style.top = '-250px';
   }
-
-  console.log(year);
   
   return (
     <div className='relative flex w-screen h-screen overflow-hidden'>
@@ -285,9 +282,7 @@ export const ComparePage = () => {
             <NavButton 
                 text={section.charAt(0).toUpperCase() + section.slice(1)} 
                 onClick={() => {
-                    console.log(year, section);
                     const config = ModelManager.getModels(year, section, setClickedMesh);
-                    console.log(config);
                     if (config) {
                         onChangeModels(
                             config.models,
@@ -310,16 +305,19 @@ export const ComparePage = () => {
 
       {!otherTab && 
       <div className='flex w-screen h-screen'>
-        <div className='w-[50vw] h-full flex justify-center items-center'>
-          <Section x={2} y={4} z={6} light={1} enableZoom={true} enableRotate={true} cameraRef={appleCameraRef} minAzimuthAngle={appleMinAzimuthAngle} maxAzimuthAngle={appleMaxAzimuthAngle}>
-            {currentAppleModel}
-          </Section>
-        </div>
-        <div className='w-[50vw] h-full flex justify-center items-center'>
-          <Section x={2} y={2} z={10} light={1} enableZoom={true} enableRotate={true} cameraRef={samsungCameraRef} minAzimuthAngle={samsungMinAzimuthAngle} maxAzimuthAngle={samsungMaxAzimuthAngle}>
-          {currentSamsungModel}
-          </Section>
-        </div>
+        <Suspense fallback={<Loader />}>
+          <div className='w-[50vw] h-full flex justify-center items-center'>
+            <Section x={2} y={4} z={6} light={1} enableZoom={true} enableRotate={true} cameraRef={appleCameraRef} minAzimuthAngle={appleMinAzimuthAngle} maxAzimuthAngle={appleMaxAzimuthAngle}>
+              {currentAppleModel}
+            </Section>
+          </div>
+          <div className='w-[50vw] h-full flex justify-center items-center'>
+            <Section x={2} y={2} z={10} light={1} enableZoom={true} enableRotate={true} cameraRef={samsungCameraRef} minAzimuthAngle={samsungMinAzimuthAngle} maxAzimuthAngle={samsungMaxAzimuthAngle}>
+            {currentSamsungModel}
+            </Section>
+          </div>
+        </Suspense>
+
       </div>
       }
 
